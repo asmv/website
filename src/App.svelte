@@ -1,24 +1,24 @@
-<script>
-	import crayon from 'crayon';
-	import svelte from 'crayon/svelte';
-	import AboutMe from './pages/AboutMe.svelte';
-	import Projects from './pages/Projects.svelte';
+<!--<script>-->
+<!--	import crayon from 'crayon';-->
+<!--	import svelte from 'crayon/svelte';-->
+<!--	import AboutMe from './pages/AboutMe.svelte';-->
+<!--	import Projects from './pages/Projects.svelte';-->
 
-	const app = crayon.create();
+<!--	const app = crayon.create();-->
 
-	app.use(svelte.router());
+<!--	app.use(svelte.router());-->
 
 
-	app.path('/', (req, res) => res.redirect('/aboutme'));
-	app.path('/aboutme', (req, res) => {
-		res.mount(AboutMe)
-	});
-	app.path('/projects', (req, res) => {
-		res.mount(Projects)
-	});
+<!--	app.path('/', (req, res) => res.redirect('/aboutme'));-->
+<!--	app.path('/aboutme', (req, res) => {-->
+<!--		res.mount(AboutMe)-->
+<!--	});-->
+<!--	app.path('/projects', (req, res) => {-->
+<!--		res.mount(Projects)-->
+<!--	});-->
 
-	app.load();
-</script>
+<!--	app.load();-->
+<!--</script>-->
 
 <style>
 	h1 {

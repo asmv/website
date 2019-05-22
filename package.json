@@ -16,13 +16,11 @@
     "build": "rollup -c",
     "autobuild": "rollup -c -w",
     "dev": "run-p start:dev autobuild",
-    "start": "sirv public",
-    "start:dev": "sirv public --dev"
+    "start": "sirv public -s",
+    "start:dev": "sirv public -s --dev"
   },
   "dependencies": {
     "@loadingio/loading-bar": "^0.1.1",
-    "@svel/router": "^1.0.0",
-    "crayon": "^1.6.0",
-    "path-to-regexp": "^3.0.0"
+    "crayon": "^1.6.0"
   }
 }
