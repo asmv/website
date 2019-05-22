@@ -1,29 +1,23 @@
 <script>
-	import {HistoryRouter, RouterProvider, RouterLink, RouterView} from '@svel/router';
-
+	import crayon from 'crayon';
+	import svelte from 'crayon/svelte';
 	import AboutMe from './pages/AboutMe.svelte';
+	import Projects from './pages/Projects.svelte';
 
-	// const router = new HistoryRouter({
-	// 	base: __dirname,
-	// 	routes: [
-	// 		{path: '/', component: AboutMe}
-	// 	]
-	// });
-	//
-	// let n = 0;
-	// let route = router.currentRoute;
-	// router.listen(r => route = r)
-	//
-	// function navigateAndIncrement () {
-	// 	const increment = () => n++
-	// 	route = router.currentRoute;
-	// 	if (router.currentRoute.path === '/') {
-	// 		router.push('/foo', increment)
-	// 	} else {
-	// 		router.push('/', increment)
-	// 	}
-	// }
+	const app = crayon.create();
 
+	app.use(svelte.router());
+
+
+	app.path('/', (req, res) => res.redirect('/aboutme'));
+	app.path('/aboutme', (req, res) => {
+		res.mount(AboutMe)
+	});
+	app.path('/projects', (req, res) => {
+		res.mount(Projects)
+	});
+
+	app.load();
 </script>
 
 <style>
@@ -33,12 +27,3 @@
 </style>
 
 <h1>Hello.</h1>
-
-<!--<RouterProvider {router}>-->
-<!--	<div id="app">-->
-<!--		<h1>Basic</h1>-->
-<!--		<ul>-->
-<!--			<li><RouterLink to="/">/</RouterLink></li>-->
-<!--		</ul>-->
-<!--	</div>-->
-<!--</RouterProvider>-->
