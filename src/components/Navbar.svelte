@@ -1,11 +1,18 @@
 <script>
-    export let linkedPages = [];
+    export let pageRoutes = Map();
+
+    let pageRouteItems = [];
+    for(let [pageRoute, pageComponent] of pageRoutes){
+        pageRouteItems.push({
+            path: pageRoute,
+            name: pageRoute.split("/")[1],
+            selected: false
+        });
+    }
 </script>
 
 <nav>
-    <h3>NavBar</h3>
-    {console.log(linkedPages)}
-    {#each linkedPages as linkedPage}
-        <p>A linked page</p>
+    {#each pageRouteItems as page}
+        <a href={page.path}>{page.name}</a>
     {/each}
 </nav>

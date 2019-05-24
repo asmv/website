@@ -9,14 +9,20 @@ app.use(svelte.router(
 	document.getElementById('app')
 ));
 
-app.path('/aboutme', (req, res) =>
-	res.mount(Layout, {reqData:{req, nav: app}, iComponent: AboutMe})
-);
+//TODO: In the future, switch to child routes for routing.
+//TODO: Figure out if I should switch back to non SPA architecture, navigation is reloaded anyway.
+let pageRoutes = new Map([
+	['/aboutme', AboutMe],
+	['/projects', Projects]
+]);
 
-app.path('/projects', (req, res) =>
-	res.mount(Layout, {reqData:{req, nav: app}, iComponent: Projects})
-);
+app.path('/', (req, res) => res.redirect("/aboutme"));
 
-app.path('/', (req, res) => res.redirect('/aboutme'));
+//TODO: Use code splitting here later?
+for(let [pageRoute, pageComponent] of pageRoutes){
+	console.log(pageRoute);
+	app.path(pageRoute, (req, res) =>
+		res.mount(Layout, {reqData:{req, nav: app}, iComponent: pageComponent, pageRoutes: pageRoutes}));
+}
 
 app.load();
