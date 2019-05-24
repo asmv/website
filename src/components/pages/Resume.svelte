@@ -2,6 +2,8 @@
     export let reqData;
 
     import Skills from "../page_components/page_resume/Skills.svelte"
+    import Experience from "../page_components/page_resume/Experience.svelte"
+
 
     let skillsCategoryMap = new Map(
         [
@@ -19,9 +21,20 @@
             ]
         ]
     );
+
+    let experienceObjects = [
+        {
+            employer: "Employer A",
+            timerange: "Jun-Sept 2017",
+            role: "Software engineer intern.",
+            description: "Description A"
+        }
+    ];
+
 </script>
 
 <div>
     <h1>Resume Header</h1>
     <Skills {skillsCategoryMap}></Skills>
+    <Experience {experienceObjects}></Experience>
 </div>

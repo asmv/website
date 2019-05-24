@@ -2,9 +2,7 @@
     export let skillsCategoryMap = Map();
 
     import ContainerLabelNum from "../../../scripts/wrapper_classes/ContainerLabelNum";
-    import ldBar from "@loadingio/loading-bar";
-
-    console.log("skillsCategoryMap", skillsCategoryMap);
+    import ldBar from "@loadingio/loading-bar"; // Needs import, otherwise will be optimized away
 
     let skillCategories = [];
     for(let [skillCategory, skillsMap] of skillsCategoryMap)
