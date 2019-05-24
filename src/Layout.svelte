@@ -1,5 +1,5 @@
 <script>
-    import NavBar from "./components/Navbar.svelte"
+    import NavBar from "./components/ui/Navbar.svelte"
 
     export let iComponent;
     export let reqData;

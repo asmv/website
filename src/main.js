@@ -2,9 +2,9 @@ import crayon from 'crayon';
 import svelte from 'crayon/svelte';
 import Layout from './Layout.svelte';
 
-import AboutMe from './pages/AboutMe.svelte';
-import Projects from './pages/Projects.svelte';
-import Resume from './pages/Resume.svelte';
+import AboutMe from './components/pages/AboutMe.svelte';
+import Projects from './components/pages/Projects.svelte';
+import Resume from './components/pages/Resume.svelte';
 
 const app = crayon.create();
 app.use(svelte.router(

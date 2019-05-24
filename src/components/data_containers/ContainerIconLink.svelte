@@ -1,5 +1,5 @@
 <script>
-    import {IconLink} from "../enumerations/iconLink";
+    import {IconLink} from "../../scripts/enumerations/iconLink";
     export let iconLinks = [
         IconLink.enumerations.twitter,
         IconLink.enumerations.git

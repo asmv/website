@@ -1,7 +1,7 @@
 <script>
     export let reqData;
 
-    import Skills from "../components/page_components/page_resume/Skills.svelte"
+    import Skills from "../page_components/page_resume/Skills.svelte"
 
     let skillsCategoryMap = new Map(
         [
