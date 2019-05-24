@@ -1,6 +1,4 @@
 <script>
-    export let req;
-    export let nav;
+    export let reqData;
 </script>
 <h1>Projects Header</h1>
-<h1>{ req.routePattern }</h1>
