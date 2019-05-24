@@ -20,7 +20,6 @@ app.path('/', (req, res) => res.redirect("/aboutme"));
 
 //TODO: Use code splitting here later?
 for(let [pageRoute, pageComponent] of pageRoutes){
-	console.log(pageRoute);
 	app.path(pageRoute, (req, res) =>
 		res.mount(Layout, {reqData:{req, nav: app}, iComponent: pageComponent, pageRoutes: pageRoutes}));
 }

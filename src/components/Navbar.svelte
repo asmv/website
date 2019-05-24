@@ -9,8 +9,6 @@
             selected: pageRoute.startsWith(reqData.req.routePattern)
         });
     }
-
-    {console.log(pageRouteItems, reqData)}
 </script>
 
 <style>
