@@ -1,8 +1,10 @@
 import crayon from 'crayon';
 import svelte from 'crayon/svelte';
+import Layout from './Layout.svelte';
+
 import AboutMe from './pages/AboutMe.svelte';
 import Projects from './pages/Projects.svelte';
-import Layout from './Layout.svelte';
+import Resume from './pages/Resume.svelte';
 
 const app = crayon.create();
 app.use(svelte.router(
@@ -13,7 +15,8 @@ app.use(svelte.router(
 //TODO: Figure out if I should switch back to non SPA architecture, navigation is reloaded anyway.
 let pageRoutes = new Map([
 	['/aboutme', AboutMe],
-	['/projects', Projects]
+	['/projects', Projects],
+	['/resume', Resume]
 ]);
 
 app.path('/', (req, res) => res.redirect("/aboutme"));
