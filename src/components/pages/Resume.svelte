@@ -5,7 +5,6 @@
     import Experience from "../page_components/page_resume/Experience.svelte";
     import DownloadButton from "../ui/DownloadButton.svelte";
 
-    import {skillsCategoryMap} from "../data/resumeData";
     import resData from "../data/resumeData.json";
 
     let experienceList = resData.experience;
@@ -14,8 +13,6 @@
     skillsList.forEach((skill) => {
        skill.cat = resData.skillCat[skill.cat]
     });
-
-    console.log(skillsList);
 </script>
 
 <div>
