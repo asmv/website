@@ -5,12 +5,9 @@ import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import json from 'rollup-plugin-json';
 
-import postcss from 'rollup-plugin-postcss';
-import simplevars from 'postcss-nested';
-import nested from 'postcss-nested';
-import cssnano from 'cssnano';
-import cssnext from 'postcss-cssnext';
-
+import sass from 'rollup-plugin-sass';
+import autoprefixer from 'autoprefixer';
+import postcss from 'postcss';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -41,14 +38,14 @@ export default {
 		resolve(),
 		commonjs(),
 
-		postcss({
-			extensions: [".css"]
+		sass({
+			// Processor will be called with two arguments:
+			// - style: the compiled css
+			// - id: import id
+			processor: css => postcss([autoprefixer])
+				.process(css)
+				.then(result => result.css)
 		}),
-
-		simplevars(),
-		nested(),
-		cssnext(),
-		cssnano(),
 
 		// Watch the `public` directory and refresh the
 		// browser on changes when not in production

@@ -7,9 +7,6 @@ import AboutMe from './components/pages/AboutMe.svelte';
 import Projects from './components/pages/Projects.svelte';
 import Resume from './components/pages/Resume.svelte';
 
-import './styles/constants.css';
-import './styles/general.css';
-
 const app = crayon.create();
 app.use(svelte.router(
 	document.getElementById('app')

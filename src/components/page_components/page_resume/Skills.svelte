@@ -23,17 +23,50 @@
     );
 </script>
 
-<div>
-    <h2>Skills</h2>
+<style>
+    .skillsDiv{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .skillCategory{
+        width: 10rem;
+        flex-grow: 1;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        justify-content: center;
+    }
+
+    .skillCategory h4{
+        text-align: center;
+        width: 100%;
+    }
+
+    .skillName{
+        width: 50%;
+    }
+    
+    .skill{
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+</style>
+
+<h2>Skills</h2>
+<div class="skillsDiv">
     {#each categorySkillsList as categoryAndSkills}
-        <h4>{categoryAndSkills.category}</h4>
-        <div>
-        {#each categoryAndSkills.skills as skill}
+        <div class="skillCategory">
+            <h4>{categoryAndSkills.category}</h4>
             <div>
-                <label>{skill.name}</label>
-                <div class="ldBar" data-preset="energy" data-value={skill.value*100}></div>
+                {#each categoryAndSkills.skills as skill}
+                    <div class="skill">
+                        <div class="skillName">{skill.name}</div>
+                        <div class="ldBar" data-preset="energy" data-value={skill.value*100}></div>
+                    </div>
+                {/each}
             </div>
-        {/each}
         </div>
     {/each}
 </div>

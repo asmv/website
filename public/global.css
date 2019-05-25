@@ -71,11 +71,11 @@ body{
 }
 
 a:link{
-	color: #d4484a;
+	color: #bb6060;
 }
 
 a:visited{
-	color: #d4484a;
+	color: #bb6060;
 }
 
 a:hover{
@@ -88,12 +88,16 @@ p
 }
 
 h1{
+	text-align: center;
+	color: #deb580;
 	font-family: 'Heebo', sans-serif;
 }
 h2{
+	text-align: center;
 	font-family: 'Source Code Pro', monospace
 }
 h3{
+	text-align: center;
 	font-family: 'Source Code Pro', monospace
 }
 h4{
