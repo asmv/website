@@ -16,7 +16,7 @@
             <li>Student at UC Santa Cruz</li>
         </ol>
         <p>There isn't too much content here now, but I will be adding more pages and projects as I keep developing the website.</p>
-        <p>You can find the source code for this site on my github page.</p>
+        <p>You can find the source code for this site <a href="https://github.com/asmv/website">on my github page</a></p>
     </div>
     <div>
         <!-- Container Icon Link Here -->

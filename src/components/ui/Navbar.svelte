@@ -15,6 +15,17 @@
     p:first-letter {
         text-transform: capitalize;
     }
+    nav {
+        overflow: hidden;
+        background-color: #222222;
+    }
+
+    a {
+        float: right;
+        display: block;
+        text-align: center;
+        padding-right: 3rem;
+    }
 </style>
 
 <nav>

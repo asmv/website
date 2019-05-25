@@ -63,3 +63,43 @@ button:focus {
 .ldBar-label{
 	display: none;
 }
+
+body{
+	background-color: #121212;
+	color: #cccccc;
+	padding-left: 3rem;
+}
+
+a:link{
+	color: #d4484a;
+}
+
+a:visited{
+	color: #d4484a;
+}
+
+a:hover{
+	color: #a24020
+}
+
+p
+{
+	font-family: 'Barlow', sans-serif;
+}
+
+h1{
+	font-family: 'Heebo', sans-serif;
+}
+h2{
+	font-family: 'Source Code Pro', monospace
+}
+h3{
+	font-family: 'Source Code Pro', monospace
+}
+h4{
+	font-family: 'Source Code Pro', monospace
+}
+
+a{
+	padding-right: 1rem;
+}
