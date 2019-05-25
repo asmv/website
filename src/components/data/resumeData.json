@@ -1,0 +1,37 @@
+{
+  "experience": [
+    {
+      "employer": "Employer A",
+      "timerange": "Jun-Sept 2017",
+      "role": "Software engineer intern.",
+      "description": "Description A"
+    }
+  ],
+  "skills": [
+      {
+        "skillName": "C#",
+        "skillValue": 0.8,
+        "category": 0
+      },
+      {
+        "skillName": "C++",
+        "skillValue": 0.4,
+        "category": 0
+      },
+      {
+        "skillName": "Git",
+        "skillValue": 0.9,
+        "category": 1
+      },
+      {
+        "skillName": "Unity",
+        "skillValue": 0.7,
+        "category": 1
+      }
+  ],
+  "skillCategories":
+  {
+    "0": "Programming Languages",
+    "1": "Tools"
+  }
+}

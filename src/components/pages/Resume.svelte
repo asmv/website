@@ -5,7 +5,10 @@
     import Experience from "../page_components/page_resume/Experience.svelte";
     import DownloadButton from "../ui/DownloadButton.svelte";
 
-    import {skillsCategoryMap, experienceObjects} from "../data/resumeData";
+    import {skillsCategoryMap} from "../data/resumeData";
+    import resData from "../data/resumeData.json";
+
+    let experienceObjects = resData.experience;
 
 </script>
 
