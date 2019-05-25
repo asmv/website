@@ -3,10 +3,16 @@
     export let reqData;
     let pageRouteItems = [];
     for(let [pageRoute, pageComponent] of pageRoutes){
+        let selected = pageRoute.startsWith(reqData.req.routePattern);
+        let pageName = pageRoute.split("/")[1];
+        if(selected)
+        {
+            document.title = `ASMV - ${pageName}`
+        }
         pageRouteItems.push({
             path: pageRoute,
-            name: pageRoute.split("/")[1],
-            selected: pageRoute.startsWith(reqData.req.routePattern)
+            name: pageName,
+            selected: selected
         });
     }
 </script>
