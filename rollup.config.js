@@ -4,7 +4,13 @@ import commonjs from 'rollup-plugin-commonjs';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import json from 'rollup-plugin-json';
+
 import postcss from 'rollup-plugin-postcss';
+import simplevars from 'postcss-nested';
+import nested from 'postcss-nested';
+import cssnano from 'cssnano';
+import cssnext from 'postcss-cssnext';
+
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -38,6 +44,11 @@ export default {
 		postcss({
 			extensions: [".css"]
 		}),
+
+		simplevars(),
+		nested(),
+		cssnext(),
+		cssnano(),
 
 		// Watch the `public` directory and refresh the
 		// browser on changes when not in production
