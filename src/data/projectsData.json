@@ -1,0 +1,19 @@
+{
+  "projects": [
+    {
+      "name": "Origin Trail",
+      "timerange": "January 2019 - Current",
+      "description": "A narrative traveling game about grief, impermanence, and seeing the sunset at the end of the world. Built in Unity by the Everything is Temporary Team at UC Santa Cruz.",
+      "links": [
+        {
+          "name": "Official Website",
+          "link": "https://origintrailgame.com"
+        },
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/OriginTrailGame"
+        }
+      ]
+    }
+  ]
+}

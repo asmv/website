@@ -6,7 +6,7 @@
     ]
 </script>
 <div>
-    <h1>Name Here</h1>
+    <h1>Alexander Smirnov</h1>
     <div class="AboutMeIntro">
         <p>Neque dolorem dolores ratione id. Et blanditiis aut debitis ab adipisci nihil. Aspernatur a rerum officiis quia similique id impedit. Enim est nobis et voluptatem. Qui placeat quae non rerum quia vero. Molestiae et pariatur velit rerum incidunt nemo dignissimos.</p>
         <p>Suscipit id inventore sed praesentium dignissimos architecto et. Exercitationem labore est saepe. Dignissimos culpa esse nesciunt non. Et vitae rerum odio in labore.</p>

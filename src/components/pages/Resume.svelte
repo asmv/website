@@ -5,7 +5,7 @@
     import Experience from "../page_components/page_resume/Experience.svelte";
     import DownloadButton from "../ui/DownloadButton.svelte";
 
-    import resData from "../data/resumeData.json";
+    import resData from "../../data/resumeData.json";
 
     let experienceList = resData.experience;
 
@@ -16,7 +16,8 @@
 </script>
 
 <div>
-    <h1>Resume Header</h1>
+    <h1>Resume</h1>
     <Skills {skillsList}></Skills>
     <Experience {experienceList}></Experience>
+    <DownloadButton downloadLink="/Resume.pdf" downloadName="Resume.pdf"></DownloadButton>
 </div>

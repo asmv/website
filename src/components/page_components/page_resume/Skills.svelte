@@ -8,7 +8,6 @@
     skillsList.forEach((skill) =>
     {
         if(skillsMap.has(skill.cat)) {
-            console.log(skillsMap.get(skill.cat));
             skillsMap.get(skill.cat).push(skill);
         }else{
             skillsMap.set(skill.cat, [skill]);
@@ -18,7 +17,7 @@
     let categorySkillsList = [];
     skillsMap.forEach((skills, category) =>
         categorySkillsList.push({
-            skills: skills.sort((a, b) => b - a),
+            skills: skills.sort((a, b) => b.value - a.value),
             category: category
         })
     );

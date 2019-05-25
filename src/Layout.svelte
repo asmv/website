@@ -6,14 +6,7 @@
     export let pageRoutes = {};
 </script>
 
-<style>
-    footer{
-        background-color: darkturquoise;
-    }
-</style>
-
+<header></header>
 <NavBar {pageRoutes} {reqData}></NavBar>
 <svelte:component this={iComponent} {reqData}/>
-<footer>
-    <h3>Footer in Layout </h3>
-</footer>
+<footer></footer>
