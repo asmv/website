@@ -1,11 +1,11 @@
 <script>
     //TODO: Make these into objects.
-    export let experienceObjects = [];
+    export let experienceList = [];
 </script>
 
 <div>
     <h2>Experience</h2>
-    {#each experienceObjects as experience}
+    {#each experienceList as experience}
         <div>
             <div class="experienceHeader">
                 <p>{experience.role}</p>

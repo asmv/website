@@ -9,27 +9,27 @@
   ],
   "skills": [
       {
-        "skillName": "C#",
-        "skillValue": 0.8,
-        "category": 0
+        "name": "C#",
+        "value": 0.8,
+        "cat": 0
       },
       {
-        "skillName": "C++",
-        "skillValue": 0.4,
-        "category": 0
+        "name": "C++",
+        "value": 0.4,
+        "cat": 0
       },
       {
-        "skillName": "Git",
-        "skillValue": 0.9,
-        "category": 1
+        "name": "Git",
+        "value": 0.9,
+        "cat": 1
       },
       {
-        "skillName": "Unity",
-        "skillValue": 0.7,
-        "category": 1
+        "name": "Unity",
+        "value": 0.7,
+        "cat": 1
       }
   ],
-  "skillCategories":
+  "skillCat":
   {
     "0": "Programming Languages",
     "1": "Tools"

@@ -1,33 +1,40 @@
 <script>
-    export let skillsCategoryMap = Map();
+    export let skillsList = [];
 
-    import ContainerLabelNum from "../../../scripts/wrapper_classes/ContainerLabelNum";
     import ldBar from "@loadingio/loading-bar"; // Needs import, otherwise will be optimized away
 
-    let skillCategories = [];
-    for(let [skillCategory, skillsMap] of skillsCategoryMap)
+    let skillsMap = new Map();
+
+    skillsList.forEach((skill) =>
     {
-        let skills = [];
-        for(let [skillName, skillValue] of skillsMap)
-        {
-            skills.push(new ContainerLabelNum(skillName, skillValue));
+        if(skillsMap.has(skill.cat)) {
+            console.log(skillsMap.get(skill.cat));
+            skillsMap.get(skill.cat).push(skill);
+        }else{
+            skillsMap.set(skill.cat, [skill]);
         }
-        skills.sort((left, right) => right.num - left.num); // sorts largest skill value first
-        skillCategories.push({category: skillCategory, skills: skills});
-    }
+    });
+
+    let categorySkillsList = [];
+    skillsMap.forEach((skills, category) =>
+        categorySkillsList.push({
+            skills: skills.sort((a, b) => b - a),
+            category: category
+        })
+    );
 </script>
 
 <div>
     <h2>Skills</h2>
-    {#each skillCategories as skillCategoryDict}
-        <h4>{skillCategoryDict.category}</h4>
+    {#each categorySkillsList as categoryAndSkills}
+        <h4>{categoryAndSkills.category}</h4>
         <div>
-        {#each skillCategoryDict.skills as skill}
+        {#each categoryAndSkills.skills as skill}
             <div>
-                <label>{skill.label}</label>
-                <div class="ldBar" data-preset="energy" data-value={skill.num*100}></div>
+                <label>{skill.name}</label>
+                <div class="ldBar" data-preset="energy" data-value={skill.value*100}></div>
             </div>
         {/each}
         </div>
-    {/each}`
+    {/each}
 </div>
