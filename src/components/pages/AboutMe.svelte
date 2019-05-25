@@ -3,6 +3,13 @@
 
     import IconWithLink from "../data_containers/IconWithLink.svelte";
 </script>
+
+<style>
+    .mediaLinks{
+        padding-left: 3em;
+    }
+</style>
+
 <div>
     <h1>Alexander Smirnov</h1>
     <div class="AboutMeIntro">
@@ -16,9 +23,8 @@
         <p>There isn't too much content here now, but I will be adding more pages and projects as I keep developing the website.</p>
         <p>You can find the source code for this site <a href="https://github.com/asmv/website">on my github page</a></p>
     </div>
-    <div>
-        <!-- Container Icon Link Here -->
-        <h4>A few links that may be of interest:</h4>
+    <h4>A few links that may be of interest:</h4>
+    <div class="mediaLinks">
         <IconWithLink site="git" link="https://github.com/asmv">Github</IconWithLink>
         <IconWithLink site="LinkedIn" link="https://www.linkedin.com/in/97alex-smirnov/">LinkedIn</IconWithLink>
     </div>

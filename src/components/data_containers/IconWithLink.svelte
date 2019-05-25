@@ -5,12 +5,15 @@
     export let site = "Website";
 
     let iconAndLink = IconLink.GetIconLink(site);
-    console.log(iconAndLink);
 </script>
 
 <style>
     img{
         filter: grayscale(100%);
+    }
+
+    .iconAndLabel{
+        align-items: center;
     }
 </style>
 

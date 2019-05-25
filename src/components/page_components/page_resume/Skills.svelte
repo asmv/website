@@ -40,6 +40,7 @@
     .skillCategory h4{
         text-align: center;
         width: 100%;
+        color: #A3CBDD;
     }
 
     .skillName{

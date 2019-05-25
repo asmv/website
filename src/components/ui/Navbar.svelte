@@ -32,6 +32,10 @@
         text-align: center;
         padding-right: 3rem;
     }
+
+    .selected{
+        color: #DEB580;
+    }
 </style>
 
 <nav>
