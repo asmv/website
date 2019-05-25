@@ -5,7 +5,7 @@ export class IconLink
     static GetIconLink(iconLinkString)
     {
         let value = IconLink.enumerations[iconLinkString];
-        return value === null ? IconLink.enumerations.default : value;
+        return value === undefined ? IconLink.enumerations.default : value;
     }
 
     constructor(iconName, iconFilename)
@@ -18,5 +18,5 @@ export class IconLink
 IconLink.enumerations = {
     twitter : new IconLink("Twitter", "twitter.svg"),
     git : new IconLink("git", "git.svg"),
-    default : new IconLink(null, "link.svg")
+    default : new IconLink("External Website Link", "link.svg")
 };

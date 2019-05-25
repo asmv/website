@@ -1,9 +1,7 @@
 <script>
     export let reqData;
 
-    let socialProfileLinks = [
-        {}
-    ]
+    import IconWithLink from "../data_containers/IconWithLink.svelte";
 </script>
 <div>
     <h1>Alexander Smirnov</h1>
@@ -21,9 +19,7 @@
     <div>
         <!-- Container Icon Link Here -->
         <h4>A few links that may be of interest:</h4>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/97alex-smirnov/">Linked-In</a></li>
-            <li><a href="https://github.com/asmv">Github</a></li>
-        </ul>
+        <IconWithLink site="git" link="https://github.com/asmv">Github</IconWithLink>
+        <IconWithLink site="LinkedIn" link="https://www.linkedin.com/in/97alex-smirnov/">LinkedIn</IconWithLink>
     </div>
 </div>
