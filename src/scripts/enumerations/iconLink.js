@@ -18,5 +18,6 @@ export class IconLink
 IconLink.enumerations = {
     Twitter : new IconLink("Twitter", "twitter.svg"),
     git : new IconLink("git", "git.svg"),
+    LinkedIn: new IconLink("LinkedIn", "LinkedIn.svg"),
     default : new IconLink("External Website Link", "link.svg")
 };

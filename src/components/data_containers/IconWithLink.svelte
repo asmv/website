@@ -10,9 +10,11 @@
 <style>
     img{
         filter: grayscale(100%);
+        padding-right: 3px;
     }
 
     .iconAndLabel{
+        display: inline-flex;
         align-items: center;
     }
 </style>
