@@ -28,6 +28,7 @@
         display: block;
         text-align: center;
         padding-right: 3rem;
+        font-size: calc(0.75rem + .5vw);
     }
 
     .selected{

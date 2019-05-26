@@ -20,15 +20,18 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     .experienceHeader > *{
-        width: 33.33%;
         text-align: center;
+        flex: 1;
+        min-width: 8rem;
     }
 
     .experienceHeader h4{
         font-size: 110%;
+        flex-basis: 33%;
     }
 </style>
 
