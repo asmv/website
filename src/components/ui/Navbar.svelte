@@ -31,7 +31,7 @@
     }
 
     .selected{
-        color: #DEB580;
+        color: #ccc;
     }
 </style>
 

@@ -10,9 +10,15 @@
     footer{
         padding-bottom: 6rem;
     }
+
+    .innerPageContent{
+        padding: 1rem 3rem;
+    }
 </style>
 
 <header></header>
 <NavBar {pageRoutes} {reqData}></NavBar>
-<svelte:component this={iComponent} {reqData}/>
+<div class="innerPageContent">
+    <svelte:component this={iComponent} {reqData}/>
+</div>
 <footer></footer>

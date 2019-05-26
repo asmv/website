@@ -34,11 +34,11 @@
         flex-grow: 1;
         padding-left: 2rem;
         padding-right: 2rem;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .skillCategory h4{
-        text-align: center;
+        padding-left: 1rem;
         width: 100%;
         color: #A3CBDD;
     }
@@ -53,6 +53,8 @@
         flex-direction: row;
         justify-content: center;
     }
+
+
 </style>
 
 <h2>Skills</h2>
@@ -64,7 +66,7 @@
                 {#each categoryAndSkills.skills as skill}
                     <div class="skill">
                         <div class="skillName">{skill.name}</div>
-                        <div class="ldBar" data-preset="energy" data-value={skill.value*100}></div>
+                        <div class="ldBar" data-preset="energy" data-fill="#A3BCDD" data-value={skill.value*100}></div>
                     </div>
                 {/each}
             </div>

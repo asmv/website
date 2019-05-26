@@ -67,19 +67,20 @@ button:focus {
 body{
 	background-color: #121212;
 	color: #cccccc;
-	padding-left: 3rem;
+	margin: auto;
+	max-width: 80rem;
 }
 
 a:link{
-	color: #bb6060;
+	color: #DEB580;
 }
 
 a:visited{
-	color: #bb6060;
+	color: #DEB580;
 }
 
 a:hover{
-	color: #a24020
+	color: #DEB580
 }
 
 p
