@@ -1,26 +1,23 @@
 <script>
-    export let pageRoutes = Map();
+    export let pageRoutes = [];
     export let reqData;
     let pageRouteItems = [];
-    for(let [pageRoute, pageComponent] of pageRoutes){
-        let selected = pageRoute.startsWith(reqData.req.routePattern);
-        let pageName = pageRoute.split("/")[1];
+    console.log("pageRoutes", pageRoutes);
+    pageRoutes.forEach((pageRoute) => {
+        let selected = pageRoute.path.startsWith(reqData.req.routePattern);
         if(selected)
         {
-            document.title = `ASMV - ${pageName}`
+            document.title = `ASMV - ${pageRoute.title}`
         }
         pageRouteItems.push({
-            path: pageRoute,
-            name: pageName,
+            path: pageRoute.path,
+            title: pageRoute.title,
             selected: selected
         });
-    }
+    });
 </script>
 
 <style>
-    p:first-letter {
-        text-transform: capitalize;
-    }
     nav {
         overflow: hidden;
         background-color: #222222;
@@ -41,7 +38,7 @@
 <nav>
     {#each pageRouteItems as page}
         <a class:selected={page.selected} href={page.path}>
-            <p>{page.name}</p>
+            <p>{page.title}</p>
         </a>
     {/each}
 </nav>

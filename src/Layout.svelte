@@ -3,7 +3,7 @@
 
     export let iComponent;
     export let reqData;
-    export let pageRoutes = {};
+    export let pageRoutes = [];
 </script>
 
 <style>
