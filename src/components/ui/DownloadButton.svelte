@@ -1,6 +1,5 @@
 <script>
     export let downloadLink = "#";
-    export let downloadName = "file"
 </script>
 
 <style>
@@ -10,4 +9,4 @@
     }
 </style>
 
-<a href={downloadLink} download="{downloadName}">Download {downloadName}</a>
+<a href={downloadLink}><slot>Download</slot></a>

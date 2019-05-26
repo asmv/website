@@ -3,7 +3,7 @@
     {
       "name": "Origin Trail",
       "timerange": "January 2019 - Current",
-      "description": "A narrative traveling game about grief, impermanence, and seeing the sunset at the end of the world. Built in Unity by the Everything is Temporary Team at UC Santa Cruz.",
+      "description": "<p>Origin trail is a narrative traveling game about grief, impermanence, and seeing the sunset at the end of the world.</p><p>My role on the team is that of a programmer and designer.</p><p>Built in Unity by the Everything is Temporary Team at UC Santa Cruz.</p>",
       "links": [
         {
           "name": "Official Website",
@@ -12,6 +12,17 @@
         {
           "name": "Twitter",
           "link": "https://twitter.com/OriginTrailGame"
+        }
+      ]
+    },
+    {
+      "name": "MNK Simulator",
+      "timerange": "January 2019 - Current",
+      "description": "<p>An efficient simulator to play some subsets of MNK (M by N board, K in a row to win).</p><p>The final version of the simulator will contain python bindings for DL frameworks such as Keras as well as a built-in MCTS-based AI.</p><p>Currently under construction.</p>",
+      "links": [
+        {
+          "name": "git",
+          "link": "https://github.com/asmv/MNK_Simulator"
         }
       ]
     }

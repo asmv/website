@@ -9,24 +9,37 @@
 </script>
 
 <style>
+
+    .projectsSection{
+        padding: 0.5rem 0;
+    }
+
+    .projectEntry{
+        background: #FFFFFF1A;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
     .projectName{
         color: #A3CBDD;
     }
+
 </style>
 
-<h1>Projects</h1>
-{#each projectList as project}
-    <div>
-        <div class="projectHeader">
-            <h2 class="projectName">{project.name}</h2>
-            <h4>{project.timerange}</h4>
+<div class="projectsSection">
+    <h1>Projects</h1>
+    {#each projectList as project}
+        <div class="projectEntry">
+            <div class="projectHeader">
+                <h2 class="projectName">{project.name}</h2>
+                <h4>{project.timerange}</h4>
+            </div>
+            <p>{@html project.description}</p>
+            <div>
+                {#each project.links as projectLink}
+                    <IconWithLink link={projectLink.link}, site={projectLink.name}>{projectLink.name}</IconWithLink>
+                {/each}
+            </div>
         </div>
-        <p>{project.description}</p>
-        <div>
-            <!--TODO: Replace this div with Svelte element-->
-            {#each project.links as projectLink}
-                <IconWithLink link={projectLink.link}, site={projectLink.name}>{projectLink.name}</IconWithLink>
-            {/each}
-        </div>
-    </div>
-{/each}
+    {/each}
+</div>

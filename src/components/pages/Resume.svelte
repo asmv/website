@@ -15,9 +15,16 @@
     });
 </script>
 
+<style>
+    .resumeDownloadContainer{
+        margin-top: 3rem;
+    }
+</style>
+
 <div>
     <h1>Resume</h1>
     <Skills {skillsList}></Skills>
     <Experience {experienceList}></Experience>
-    <DownloadButton downloadLink="/Resume.pdf" downloadName="Resume.pdf"></DownloadButton>
+    <div class="resumeDownloadContainer"></div>
+    <DownloadButton downloadLink="/Resume.pdf">Download Resume.pdf</DownloadButton>
 </div>

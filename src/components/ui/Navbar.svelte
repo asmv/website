@@ -20,7 +20,7 @@
 <style>
     nav {
         overflow: hidden;
-        background-color: #222222;
+        background-color: #FFFFFF23;
     }
 
     a {
