@@ -33,6 +33,7 @@
 
     .selected{
         color: #ccc;
+        text-decoration-line: underline;
     }
 </style>
 

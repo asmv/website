@@ -61,6 +61,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+        padding-top: 0.3rem;
     }
 
 

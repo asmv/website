@@ -4,25 +4,25 @@
       "employer": "UCSC: Baskin School of Engineering",
       "timerange": "Spring 2019",
       "role": "Grader-Tutor",
-      "description": "Worked as an assignment grader and student tutor for the Natural Language Processing course at UCSC’s Baskin School of Engineering."
+      "description": "<ul><li>Worked as an assignment grader and student tutor for the Natural Language Processing course at UCSC’s Baskin School of Engineering.</li></ul>"
     },
     {
       "employer": "Zynga Inc.",
       "timerange": "Summer 2018",
       "role": "Software Engineer Intern at Zynga Poker",
-      "description": "Coded a Unity client feature allowing for dynamic prefab instantiation from a server-side configuration.\nInvestigated and solved device-specific purchasing bugs by tracing the purchase execution pipeline through the full code stack.\nDeveloped a NLP system for automated analysis of game reviews and comprehensive text search written in Python using NLTK Toolkit, SciKit-Learn, imblearn, NumPy, and gensim.\nAdded functionality to an admin tool written in PHP and Javascript with unit tests and feature documentation."
+      "description": "<ul><li>Coded a Unity client feature allowing for dynamic prefab instantiation from a server-side configuration.</li><li>Investigated and solved device-specific purchasing bugs by tracing the purchase execution pipeline through the full code stack.</li><li>Developed a NLP system for automated analysis of game reviews and comprehensive text search written in Python using NLTK Toolkit, SciKit-Learn, imblearn, NumPy, and gensim.</li><li>Added functionality to an admin tool written in PHP and Javascript with unit tests and feature documentation.</li></ul>"
     },
     {
       "employer": "2bsocial LLC.",
       "timerange": "Summer 2017",
       "role": "Game Developer",
-      "description": "Implemented and modified A* and Greedy pathfinding algorithms as fundamental game mechanics.\nCoded and configured the game backend using several Amazon Web Services including DynamoDB, Lambda, APIGateway, CloudWatch, S3, CloudFront, and IAM.\nAdded a secure communication channel between a C# frontend and Python backend using hybrid RSA-AES encryption."
+      "description": "<ul><li>Implemented and modified A* and Greedy pathfinding algorithms as fundamental game mechanics.</li><li>Coded and configured the game backend using several Amazon Web Services including DynamoDB, Lambda, APIGateway, CloudWatch, S3, CloudFront, and IAM.</li><li>Added a secure communication channel between a C# frontend and Python backend using hybrid RSA-AES encryption.</li></ul>"
     },
     {
       "employer": "Lawrence Berkeley National Lab",
       "timerange": "Summer 2016",
       "role": "Student Assistant",
-      "description": "Designed an architecture for the project using Balsamiq.\nImplemented a NoSQL database and object to document mapper (Morphia) in MongoDB.\nConstructed web servlets for file upload, input, validation, and UI display."
+      "description": "<ul><li>Designed an architecture for the project using Balsamiq.</li><li>Implemented a NoSQL database and object to document mapper (Morphia) in MongoDB.</li><li>Constructed web servlets for file upload, input, validation, and UI display.</li></ul>"
     }
   ],
   "skills": [
