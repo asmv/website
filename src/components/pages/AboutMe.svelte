@@ -12,12 +12,21 @@
     .mediaLinks{
         padding-left: 3em;
     }
+
+    img{
+        display: block;
+        float: right;
+        height: 16rem;
+        width: auto;
+        clip-path: polygon(0 0, 80% 0, 100% 100%, 20% 100%);
+    }
 </style>
 
 <div>
     <h1>Alexander Smirnov</h1>
     <div class="aboutmeSection">
         <div class="AboutMeIntro">
+            <img src="images/raster/profile_picture.jpg" alt="Alexander Smirnov Waist-Up Profile Picture">
             <p>Hello and welcome to my website!</p>
             <p>I am Alexander Smirnov, <b>Game Developer</b>, <b>Programmer</b>, and <b>Student at UC Santa Cruz</b>.</p>
             <p>My goal is to join in at the forefront of new CS technologies and participate in the creation of tools and software for my own interest and to make an impact.</p>
